@@ -1,0 +1,53 @@
+* {
+    margin: 0
+}
+
+body {
+    background: linear-gradient(75deg, #241221 15%, #5f2d5d 90%);
+    
+    font-size: 100%;
+    font-family: 'Roboto Mono', monospace;
+    color: #DBB2DA;
+}
+
+.resumo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+
+    border: 2px solid rgba(255, 255, 255, .1);
+    box-shadow: 10px 5px 50px 10px #000, 1px 1px 5px 1px rgb(248, 155, 236);;
+    border-radius: 25px;
+    margin: 30px;
+    
+
+
+
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 80px;
+    text-shadow: -4px 4px #000000;
+}
+
+.resumo-texto {
+    width: 550px;
+    height: auto;
+    padding-top: 20px;
+    
+    font-size: 20px;
+    line-height: 30px;
+    text-shadow: -4px 4px #000000 ;
+}
+
+.foto {
+    width: auto;
+    height: 250px;
+
+    border: 4px solid rgba(0, 0, 0, .4);
+    border-radius: 40px;
+    box-shadow: 10px 10px 50px 10px #000;
+}
+
