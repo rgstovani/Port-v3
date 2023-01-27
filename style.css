@@ -1,11 +1,11 @@
 :root {
     --cor1: rgba(253, 238, 220, 1);
-    --cor2: #400036;
-    --cor3: #970FF2;
-    --cor4: rgba(255, 129, 208, 1);
-    --cor5: rgba(255,190,255,1);
-    --cor6: rgba(190,200,255,1);
-    --cor7: rgba(145, 246, 255, 1);
+    --cor2: rgba(255, 129, 208, 1);
+    --cor3: rgba(255,190,255,1);
+    --cor4: rgba(190,200,255,1);
+    --cor5: rgba(145, 246, 255, 1);
+    --cor6: rgba(151, 15, 242, 1);
+    --cor7: rgba(64, 0, 54, 1);
     --cor8: rgba(0, 0, 0, .8);
 }
 
@@ -14,7 +14,6 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-
 
     vertical-align: middle;
     text-align: center;    
@@ -26,6 +25,7 @@ body {
     background: rgb(190,200,255);
     background: linear-gradient(180deg, rgba(190,200,255,1) 10%, rgba(255,190,255,1) 80%);
 
+    color: var(--cor7);
     text-shadow: 0px 0px 5px var(--cor8);
 }
 
@@ -38,34 +38,47 @@ img {
     border-radius: 15px;
 }
 
-a {
+.menuitem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     text-decoration: none;
+    color: var(--cor7);
+    width: 130px;
+    height: 30px;
+
+
+}
+
+.menuitem:hover {
+    background-color: rgba(255, 129, 208, 0.5);
+    border-radius: 15px;
+    
 
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    margin: 10px auto;
+    max-width: 760px; 
+    
+    
 
 }
 
-.barra {
+.barra {  
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    
+    justify-content: space-around;
     font-weight: 700;
     font-size: 20px;
     padding: 10px;
+    background: linear-gradient(180deg, rgba(151, 15, 242, .5) 10%, rgba(255,190,255,1) 80%);
+    /* background: linear-gradient(180deg,rgba(151, 15, 242, .5) 10%, rgba(255,190,255,.5) 80%); */
+    
+    box-shadow: 0px 0px 15px 5px rgba(64, 0, 54, 0.7);
+    border-radius: 15px;  
 
-
-
-    box-shadow: 0px 0px 10px 10px var(--cor8);
-    border-radius: 15px;
- 
+    
 }
 
 main {
@@ -86,11 +99,10 @@ main {
     margin: 20px;
     padding: 20px;
     
-    box-shadow: 0px 0px 10px 10px var(--cor8);
+    background: linear-gradient(180deg, rgba(255,190,255,1) 10%, rgba(190,200,255,1) 80%);
+    box-shadow: 0px 0px 15px 5px rgba(64, 0, 54, 0.7);
     border-radius: 15px;
     max-width: 760px; 
-
-
 }
 
 h1 {
@@ -106,7 +118,7 @@ h1 {
 
 .conhecimento { }
 
-.teste {
+.blococonhecimento {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -116,12 +128,16 @@ h1 {
     margin: 20px;
     padding: 20px;
     
-    box-shadow: 0px 0px 10px 10px var(--cor8);
-    border-radius: 15px;
+/*     box-shadow: 0px 0px 10px 10px var(--cor8);
+    border-radius: 15px; */
     max-width: 760px;
 }
 
-h2 {}
+
+h2 {
+    font-size: 24px;
+}
+
 .texto-conhecimento {}
 
 .habilidades {
@@ -134,11 +150,13 @@ h2 {}
     margin: 20px;
     padding: 20px;
     
-    box-shadow: 0px 0px 10px 10px var(--cor8);
+    box-shadow: 0px 0px 15px 5px rgba(64, 0, 54, 0.7);
     border-radius: 15px;
     max-width: 760px;
 }
-h3
+h3 {
+    font-size: 24px;
+}
 .conjunto-itens {
 
 }
@@ -150,12 +168,18 @@ h3
     align-items: center;
     vertical-align: middle;
     gap: 20px;
+
+    border-top: 1px solid rgba(64, 0, 54, 0.4);
+    padding-bottom: 20px;
 }
 .titulo {
+    font-size: 20px;
+    font-weight: 700;
     padding: 10px;
     margin: 10px;
 }
 .resumo-titulo {
+    font-size: 18px;
     min-width: 150px;
     max-width: 500px;
 }
@@ -168,7 +192,8 @@ h3
 }
 
 .conhecimentogeral {
-    box-shadow: 0px 0px 10px 10px var(--cor8);
+    
+    
     border-radius: 15px;
     padding: 20px 20px;
     margin: 20px;
@@ -177,6 +202,7 @@ h3
 }
 
 h4 {
+    font-size: 24px;
     padding: 20px 40px;
 }
 
@@ -189,6 +215,8 @@ h4 {
     vertical-align: middle;
     column-gap: 50px;
     row-gap: 40px;
+
+    
 }
 
 .item-secundario {}
@@ -198,7 +226,7 @@ h4 {
     min-width: 50px;
     width: 90px;
     height: 90px;
-    box-shadow: none;
+    box-shadow: 0 0 30px .5px rgba(255,255,255,0.1);
 }
 
 .contato {
@@ -208,10 +236,9 @@ h4 {
     justify-content: center;
     align-items: center;
     vertical-align: middle;
-/*     column-gap: 50px;
-    row-gap: 40px; */
 
-    box-shadow: 0px 0px 10px 10px var(--cor8);
+    background: linear-gradient(180deg, rgba(190,200,255,1) 10%, rgba(255,190,255,1) 80%);
+    box-shadow: 0px 0px 15px 5px rgba(64, 0, 54, 0.7);
     border-radius: 15px;
     padding: 20px 40px;
     margin: 20px;
@@ -219,9 +246,14 @@ h4 {
 }
 .foto2 {}
 .meuscontatos {}
-h5 {}
-.descricao-contato {
+h5 {
+    font-size: 24px;
     padding: 20px;
+}
+
+.descricao-contato {
+    font-size: 18px;
+    padding: 0px 0px 40px 0px;
 }
 
 .contatos {
@@ -236,11 +268,22 @@ h5 {}
 
     padding-left: 100px;
 }
-.item-contato {}
+.item-contato a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--cor7);
+    width: 130px;
+    height: 30px;
+}
+
+.item-contato a:hover {
+        background-color: rgba(255, 129, 208, 0.5);
+        border-radius: 15px;
+}
 
 .minilogo {
-    
-    min-width: 20px;
+    box-shadow: 0px 0px 15px 5px rgba(64, 0, 54, 0.8);
+    min-width: 18px;
     height: 30px;
     width: 30px;
 }
