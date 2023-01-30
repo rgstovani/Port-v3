@@ -90,8 +90,7 @@ main {
 }
 
 h1 {
-    color: var(--cor5);
-    text-shadow: 2px 2px 2px #000, 0px 0px 1px var(--pretosombra);
+    text-shadow: 2px 2px 2px var(--cor5);
     font-size: 34px;
     padding: 10px;
     padding-bottom: 30px;
