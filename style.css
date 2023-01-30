@@ -279,11 +279,62 @@ h5 {
     align-items: center;
     vertical-align: middle;
 
-    min-width: 150px;
-    max-width: 500px;
-    
+}
+
+.apresentacao_projetos {
+    padding-bottom: 20px;
 
 }
-.projeto{}
-.titulo_projeto{}
-.descricao_projeto{}
+
+.projeto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+
+    margin: 10px auto;
+    padding: 5px;
+
+    
+    box-shadow: 0px 0px 15px 5px rgba(64, 0, 54, 0.7);
+    border-radius: 15px;
+
+}
+.titulo_projeto{
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 2px 2px 1px var(--cor2), 0px 0px 1px var(--pretosombra);
+    padding: 10px;
+
+    min-width: 100px;
+    max-width: 300px;
+}
+
+.descricao_projeto{
+    font-size: 16px;
+    min-width: 100px;
+    max-width: 400px;
+    padding: 10px;
+}
+
+.projeto a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--cor7);
+    width: 180px;
+    height: 30px;
+
+    margin-bottom: 20px;
+    }
+    
+.projeto a:hover {
+    background-color: rgba(255, 129, 208, 0.5);
+    border-radius: 15px;
+}
