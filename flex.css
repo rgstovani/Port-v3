@@ -1,0 +1,49 @@
+.menuitem, .resumo, .conhecimento, .habilidades, 
+.item-principal, .itens-secundarios, .contato, .contatos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+
+.barra {  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+main, .projetos, .projeto, .projeto a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+
+.resumo, .conhecimento, .habilidades {
+    gap: 20px;
+}
+
+
+.item-principal {
+    flex-wrap: nowrap;
+}
+
+
+.itens-secundarios {
+    column-gap: 50px;
+    row-gap: 40px;
+}
+
+
+.contatos {
+    justify-content:flex-start;
+    align-items:flex-end;
+    column-gap: 80px;
+    row-gap: 20px;
+}
