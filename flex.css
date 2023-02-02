@@ -1,49 +1,99 @@
-.menuitem, .resumo, .conhecimento, .habilidades, 
-.item-principal, .itens-secundarios, .contato, .contatos {
+body  {}
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+.menu-item {}
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box-apresentacao {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.apresentacao1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+h1 {}
+p {}
+.foto {}
+.apresentacao2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+.box-conhecimento {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.habilidades{
+
+}
+.item-principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-geral {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 40px;
+}
+.box-contatos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.contatos-descricao{}
+.box-redessociais{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    vertical-align: middle;
 }
 
-
-.barra {  
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-
-main, .projetos, .projeto, .projeto a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-}
-
-
-.resumo, .conhecimento, .habilidades {
-    gap: 20px;
-}
-
-
-.item-principal {
-    flex-wrap: nowrap;
-}
-
-
-.itens-secundarios {
-    column-gap: 50px;
-    row-gap: 40px;
-}
-
-
-.contatos {
-    justify-content:flex-start;
-    align-items:flex-end;
-    column-gap: 80px;
-    row-gap: 20px;
-}
