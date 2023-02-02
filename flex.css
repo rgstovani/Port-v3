@@ -1,23 +1,31 @@
 .body {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
 }
 
 
-.barra, .divisao, .conhecimento, .item-principal, .divisao2 {
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.divisao, .item-principal, .divisao2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items:center;
+
 }
 
 
-.resumo {
-    row-gap: 20px;
+.resumo, .divisaoresumo, .divisao {
+    gap: 20px;
 }
 
 
@@ -27,7 +35,13 @@
 
 
 .conhecimento {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
     column-gap: 100px;
+    row-gap: 1em;
 }
 
 
@@ -40,22 +54,13 @@
 }
 
 
-.contatobox, .contato, .contatos, .itens-secundarios, .divisao-itens {
+.contatobox, .contatos, .itens-secundarios, .divisao-itens {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
-
-@media screen and (max-width: 400px) {
-    .divisao-itens {
-        display: flex;
-        flex-direction: column;
-    }
-
-}
-
 
 .itens-secundarios {
     flex-wrap: wrap;
@@ -64,11 +69,70 @@
 
 
 .item-principal{
-    padding: 40px;
-    gap: 40px;
+    padding: 20px;
+    gap: 20px;
 }
 
 
-.contatobox, .contato, .contatos, .divisao-itens {
-    column-gap: 90px;
+.contato {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contatobox, .contato, .contatos, .divisao-itens, .item-contato {
+    gap: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .divisao-itens {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 650px) {
+    .conhecimento {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: 10px;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 1250px) {
+    .conhecimento {
+        gap: 40px;
+    }
+
+    .divisao-itens {
+        gap: 70px;
+    }
+
+    .contatos{
+        gap: 100px;
+    }
+
+
+}
+
+
+.projetos, .projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
