@@ -1,0 +1,38 @@
+:root {
+    --cor0: #ffffff;
+    --cor1: #29303f;
+    --cor2: #1e1e1e;
+    --cor3: rgb(0, 229, 255);
+    --cor4: #b400fb;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    background-color: var(--cor1);
+    margin: 0.5em;
+}
+
+header {
+    background-color: var(--cor2);
+}
+
+.resumo {
+    background-color: var(--cor2);
+}
