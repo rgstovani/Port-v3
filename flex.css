@@ -20,7 +20,6 @@ header{
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items:center;
-
 }
 
 
@@ -92,7 +91,6 @@ header{
         display: flex;
         flex-direction: column;
     }
-
 }
 
 @media screen and (min-width: 650px) {
@@ -110,7 +108,6 @@ header{
         justify-content: center;
         align-items: center;
     }
-
 }
 
 @media screen and (min-width: 1250px) {
@@ -125,8 +122,6 @@ header{
     .contatos{
         gap: 100px;
     }
-
-
 }
 
 
